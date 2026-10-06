@@ -6,19 +6,21 @@ use App\Http\Requests\IndexProductRequest;
 use App\Http\Requests\ProductRequest;
 use App\Http\Resources\ProductResource;
 use App\Models\Product;
+use App\Services\ProductListCache;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
+    public function __construct(private readonly ProductListCache $productListCache) {}
+
     public function index(IndexProductRequest $request): AnonymousResourceCollection
     {
         $filters = $request->validated();
 
         return ProductResource::collection(
-            Product::with(['category', 'suppliers'])->filter($filters)->orderBy('id')
-                ->paginate($filters['per_page'] ?? 15)->withQueryString()
+            $this->productListCache->paginate($filters)->withQueryString()
         );
     }
 
@@ -30,6 +32,8 @@ class ProductController extends Controller
 
             return $product;
         });
+
+        $this->productListCache->invalidate();
 
         return new ProductResource($product->load(['category', 'suppliers']));
     }
@@ -50,12 +54,15 @@ class ProductController extends Controller
             }
         });
 
+        $this->productListCache->invalidate();
+
         return new ProductResource($product->load(['category', 'suppliers']));
     }
 
     public function destroy(Product $product): Response
     {
         $product->delete();
+        $this->productListCache->invalidate();
 
         return response()->noContent();
     }
