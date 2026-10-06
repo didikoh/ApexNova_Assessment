@@ -1,0 +1,111 @@
+1. How old are you this year?
+I am 27 years old this year.
+
+2. What is your marital status?
+Single.
+
+3. Where do you stay currently?
+Bukit Jalil, Kuala Lumpur, Malaysia.
+
+4. What is your highest education? Education in which course?
+Bachelor's Degree in Computer Game Development from Asia Pacific University of Technology & Innovation (APU), under a dual-degree programme with Staffordshire University, UK.
+
+5. What is your last/current position?
+Software Developer at CK Group, Kuala Lumpur.
+
+6. Reason for leaving?
+I am looking for a new career challenge and a role with stronger long-term growth opportunities in full-stack software development.
+
+7. What is your current salary?
+RM6,000/month.
+
+8. What is your expected salary?
+RM7,500/month, negotiable depending on the overall package and job responsibilities.
+
+9. What is your notice period?
+2 months.
+
+1. What is your personality and tell me your strength & weakness? (workplace)
+I would describe myself as responsible, adaptable, self-driven, and willing to learn.
+
+Strengths: problem-solving, learning new technologies quickly, taking ownership of my work, and being comfortable working independently when required.
+
+Weakness: sometimes I can spend too much time refining technical details because I want the solution to be well implemented. I have improved this by prioritising tasks based on business requirements and deadlines.
+
+2. What kind of personality of colleague you like or dislike to work with?
+I enjoy working with colleagues who communicate clearly, take responsibility for their work, and are open to discussion and feedback.
+
+I find it more challenging when there is poor communication or a lack of ownership, but I normally handle this by keeping communication professional and focusing on resolving the actual issue rather than the personality.
+
+3. How many years of working experience as Full Stack Software Developer?
+Around 3.5 years of hands-on full-stack development experience, with around 4 years of overall professional software development experience.
+
+For example, at Fusionex I developed a full-stack AI chatbot and a full-stack admin portal using Angular with C#/Python backend services.
+
+4. Which do you think you are better at or enjoy more: frontend development or backend development?
+My stronger area is currently frontend development, especially JavaScript/TypeScript, React and interactive web applications.
+
+However, I enjoy full-stack development because I like being able to connect the frontend, backend APIs and database together and understand the complete application flow.
+
+5. How many projects were you involved in at your previous workplace?
+Across my current and previous roles, I have been involved in around 8+ significant projects, including web applications, property sales platforms, AI chatbot systems, admin portals, Unity/Unreal applications, XR applications and Web3-related projects.
+
+6. How many projects have you charge in from scratch?
+I have handled around 3–4 projects from the early development stage, including system setup, frontend/backend implementation, API/database integration, deployment and production support.
+
+7. Which kind of frontend language/framework that you apply/learn on previous workplace? (prefer HTML, CSS, JavaScript, VueJs)
+I have experience with HTML, CSS, JavaScript, TypeScript, React, Vite, Angular, Next.js, Bootstrap, PixiJS and Babylon.js.
+
+My production experience is mainly with React and Angular rather than Vue.js.
+
+8. How many projects have you built using VueJs? Simply describe the project details
+I do not have a major production project built primarily with Vue.js yet.
+
+Most of my frontend production experience has been with React, TypeScript and Angular. Since the core concepts such as components, state management, API integration and frontend architecture are transferable, I am confident that I can pick up Vue.js quickly.
+
+9. Which kind of backend language/tool you apply/learn on previous workplace? (prefer PHP, Laravel)
+I have experience with PHP, Node.js / NestJS, C# / ASP.NET Web API, Python, RESTful APIs, MySQL, PostgreSQL, Laravel and third-party API integration.
+
+My current role involves PHP/MySQL backend development, database handling and API-related development.
+
+10. How many projects have you built using Laravel? Simply describe the project details
+I have learned and worked with Laravel, but Laravel has not been the primary framework for my major production projects.
+
+Most of my production PHP backend work has involved PHP, MySQL, REST APIs and backend integration. I am familiar with Laravel concepts and am comfortable picking it up further if it is required for the role.
+
+11. Do you familiar with database system such as MySQL & if yes how many years?
+Yes. I have around 2+ years of hands-on MySQL experience, including database design/handling, queries and integrating MySQL with backend APIs and web applications.
+
+12. Do you have any experience with cloud platform such as AWS (Amazon Web Services)?
+I have some hands-on experience with Microsoft Azure, mainly through development and deployment-related work.
+
+My cloud experience is still developing, but I am familiar with cloud-based application workflows and am comfortable learning AWS if required for the role.
+
+13. How many junior or senior developers you have guided before?
+I have not kept an exact count, but I have guided and coordinated more than 5 team members across different projects.
+
+Besides developers, I also coordinate with 3D team members. Although I am not a 3D modeller or rendering artist, I usually define the technical and project requirements, manage and follow up on tasks, review whether the output meets the application needs, and provide solutions when there are implementation issues.
+
+14. What is the biggest challenge to guide those junior or senior developer?
+One of the main challenges is making sure everyone understands not only what needs to be done, but also why a particular approach is being used.
+
+I normally try to explain the requirement and technical reasoning clearly, provide suggestions rather than simply giving the answer, and balance learning opportunities with project deadlines.
+
+15. Do you have experience on leading team? If yes please elaborate what kind of position under your subordination and how long?
+I have not held a formal Team Lead title yet.
+
+However, I have taken ownership of projects and modules, coordinated with developers, designers and clients, and handled development from implementation through deployment and production support.
+
+16. How do you handle disagreement or conflicting opinions within development team? Can give an example of how do you resolve the situation in the past?
+I normally first try to understand why each person prefers a particular solution instead of immediately deciding which person is right or wrong.
+
+For example, when there are different opinions about how to implement a web or interactive feature, I compare the approaches based on requirements, development time, maintainability, performance and user experience. If necessary, I will create a small proof of concept or test the different approaches.
+
+Then we can make the decision based on technical evidence and project requirements rather than personal preference.
+
+17. What steps do you take to stay updated with the latest trends and technologies in full stack development?
+I regularly read official documentation, GitHub repositories, release notes and technical discussions.
+
+I also like to build small proof-of-concept projects when learning new technologies because I find hands-on testing more effective than only reading documentation.
+
+Recently I have also been using AI development tools to help with technical research, compare different approaches and learn new frameworks more efficiently.

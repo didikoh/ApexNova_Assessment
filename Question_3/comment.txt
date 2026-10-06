@@ -1,0 +1,17 @@
+Review outcome: Request changes before merging.
+
+The controller is easy to follow, but I would request the following improvements before merging. Where protections may already exist outside this snippet, I would verify them first.
+
+1. Access control: Require authentication, authorize listing/creation/deletion, and scope queries to permitted orders. For customer orders, derive user_id from the authenticated user; creating for someone else needs explicit permission.
+
+2. Validation: Use a StoreOrderRequest and accept only permitted fields. Calculate checkout totals and initial status on the server. Restrict and validate any administrative overrides. Explicit assignments bypass $fillable, so it would not solve this issue.
+
+3. Deletion: Use findOrFail() or route model binding to return 404 for missing orders, then authorize deletion. Confirm whether paid or fulfilled orders should be cancelled or retained instead.
+
+4. Listing: Replace Order::all() with an authorized, consistently ordered, paginated query. Eager-load the user relationship to avoid one extra query per order, cap page size, and define behavior for missing or deleted users.
+
+5. Audit logging: The unused DB::select() reads data; it does not record an event. Remove it or insert the intended audit record. Use a transaction if order creation and auditing must succeed together. Bind parameters for any retained SQL; the saved model ID alone does not demonstrate an injection vulnerability.
+
+6. Responses: Use an OrderResource to expose consistent, explicit fields. Return 201 for creation; deletion can return 200 with a message or an empty 204.
+
+7. Tests: Cover authentication, cross-user access, invalid input, ownership/price/status manipulation, creation responses, missing orders, denied deletion, pagination, query counts, missing users, and audit rollback where applicable.
