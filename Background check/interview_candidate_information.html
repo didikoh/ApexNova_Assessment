@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interview Candidate Information - Koh Wei Zhen</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --paper: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #111827;
+    --soft: #f9fafb;
+    --warn: #fff7ed;
+    --warn-line: #fed7aa;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    width: min(980px, calc(100% - 32px));
+    margin: 36px auto 64px;
+  }
+  .hero {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.04);
+    margin-bottom: 22px;
+  }
+  .hero h1 {
+    margin: 0 0 8px;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.1;
+  }
+  .hero p {
+    margin: 0;
+    color: var(--muted);
+  }
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+  }
+  button, .nav a {
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 9px 12px;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  button:hover, .nav a:hover { background: var(--soft); }
+  .section {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 28px;
+    margin-top: 22px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.03);
+  }
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+  .section-title h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .badge {
+    background: var(--soft);
+    border: 1px solid var(--line);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .qa-card {
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+  }
+  .qa-card:first-of-type { border-top: 0; padding-top: 0; }
+  .qa-card:last-of-type { padding-bottom: 0; }
+  .qa-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .qa-head h3 {
+    margin: 0 0 10px;
+    font-size: 17px;
+    line-height: 1.45;
+  }
+  .answer {
+    color: #374151;
+    max-width: 850px;
+  }
+  .copy-btn {
+    flex: 0 0 auto;
+    font-size: 13px;
+    padding: 6px 9px;
+  }
+  .note {
+    background: var(--warn);
+    border: 1px solid var(--warn-line);
+    border-radius: 14px;
+    padding: 18px;
+    margin-top: 22px;
+  }
+  .note h3 { margin: 0 0 8px; font-size: 16px; }
+  .note p { margin: 6px 0; }
+  .test-box {
+    background: var(--soft);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px;
+  }
+  .test-box p { margin: 0; }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  footer {
+    color: var(--muted);
+    text-align: center;
+    padding: 26px 0 0;
+    font-size: 13px;
+  }
+  @media (max-width: 700px) {
+    .wrap { width: min(100% - 20px, 980px); margin-top: 10px; }
+    .hero, .section { padding: 20px; border-radius: 14px; }
+    .qa-head { display: block; }
+    .copy-btn { margin-bottom: 10px; }
+  }
+  @media print {
+    body { background: white; }
+    .wrap { width: 100%; margin: 0; }
+    .hero, .section { box-shadow: none; border-color: #ddd; break-inside: avoid; }
+    .toolbar, .copy-btn, .nav { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>Interview Candidate Information</h1>
+    <p><strong>Koh Wei Zhen</strong> · Full Stack / Software Developer</p>
+    <div class="nav">
+      <a href="#basic">Basic Information</a>
+      <a href="#character">Candidate Characteristics</a>
+    </div>
+    <div class="toolbar">
+      <button onclick="window.print()">Print / Save as PDF</button>
+      <button onclick="copyAll()">Copy all answers</button>
+    </div>
+  </header>
+
+  <section class="section" id="basic">
+    <div class="section-title">
+      <h2>Basic Information</h2>
+      <span class="badge">9 questions</span>
+    </div>
+    
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>1. How old are you this year?</h3>
+            <button class="copy-btn" data-copy="I am 27 years old this year.">Copy answer</button>
+          </div>
+          <div class="answer">I am <strong>27 years old</strong> this year.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>2. What is your marital status?</h3>
+            <button class="copy-btn" data-copy="Single.">Copy answer</button>
+          </div>
+          <div class="answer">Single.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>3. Where do you stay currently?</h3>
+            <button class="copy-btn" data-copy="Bukit Jalil, Kuala Lumpur, Malaysia.">Copy answer</button>
+          </div>
+          <div class="answer">Bukit Jalil, Kuala Lumpur, Malaysia.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>4. What is your highest education? Education in which course?</h3>
+            <button class="copy-btn" data-copy="Bachelor&#x27;s Degree in Computer Game Development from Asia Pacific University of Technology &amp; Innovation (APU), under a dual-degree programme with Staffordshire University, UK.">Copy answer</button>
+          </div>
+          <div class="answer">Bachelor's Degree in <strong>Computer Game Development</strong> from Asia Pacific University of Technology & Innovation (APU), under a dual-degree programme with Staffordshire University, UK.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>5. What is your last/current position?</h3>
+            <button class="copy-btn" data-copy="Software Developer at CK Group, Kuala Lumpur.">Copy answer</button>
+          </div>
+          <div class="answer">Software Developer at CK Group, Kuala Lumpur.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>6. Reason for leaving?</h3>
+            <button class="copy-btn" data-copy="I am looking for a new career challenge and a role with stronger long-term growth opportunities in full-stack software development.">Copy answer</button>
+          </div>
+          <div class="answer">I am looking for a new career challenge and a role with stronger long-term growth opportunities in full-stack software development.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>7. What is your current salary?</h3>
+            <button class="copy-btn" data-copy="RM6,000/month.">Copy answer</button>
+          </div>
+          <div class="answer">RM6,000/month.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>8. What is your expected salary?</h3>
+            <button class="copy-btn" data-copy="RM7,500/month, negotiable depending on the overall package and job responsibilities.">Copy answer</button>
+          </div>
+          <div class="answer">RM7,500/month, negotiable depending on the overall package and job responsibilities.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>9. What is your notice period?</h3>
+            <button class="copy-btn" data-copy="2 months.">Copy answer</button>
+          </div>
+          <div class="answer">2 months.</div>
+        </article>
+        
+  </section>
+
+  <section class="section" id="character">
+    <div class="section-title">
+      <h2>Candidate Characteristics</h2>
+      <span class="badge">17 questions</span>
+    </div>
+    
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>1. What is your personality and tell me your strength & weakness? (workplace)</h3>
+            <button class="copy-btn" data-copy="I would describe myself as responsible, adaptable, self-driven, and willing to learn.
+
+
+     Strengths: problem-solving, learning new technologies quickly, taking ownership of my work, and being comfortable working independently when required.
+
+
+     Weakness: sometimes I can spend too much time refining technical details because I want the solution to be well implemented. I have improved this by prioritising tasks based on business requirements and deadlines.">Copy answer</button>
+          </div>
+          <div class="answer">I would describe myself as responsible, adaptable, self-driven, and willing to learn.<br><br>
+     <strong>Strengths:</strong> problem-solving, learning new technologies quickly, taking ownership of my work, and being comfortable working independently when required.<br><br>
+     <strong>Weakness:</strong> sometimes I can spend too much time refining technical details because I want the solution to be well implemented. I have improved this by prioritising tasks based on business requirements and deadlines.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>2. What kind of personality of colleague you like or dislike to work with?</h3>
+            <button class="copy-btn" data-copy="I enjoy working with colleagues who communicate clearly, take responsibility for their work, and are open to discussion and feedback.
+
+
+     I find it more challenging when there is poor communication or a lack of ownership, but I normally handle this by keeping communication professional and focusing on resolving the actual issue rather than the personality.">Copy answer</button>
+          </div>
+          <div class="answer">I enjoy working with colleagues who communicate clearly, take responsibility for their work, and are open to discussion and feedback.<br><br>
+     I find it more challenging when there is poor communication or a lack of ownership, but I normally handle this by keeping communication professional and focusing on resolving the actual issue rather than the personality.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>3. How many years of working experience as Full Stack Software Developer?</h3>
+            <button class="copy-btn" data-copy="Around 3.5 years of hands-on full-stack development experience, with around 4 years of overall professional software development experience.
+
+
+     For example, at Fusionex I developed a full-stack AI chatbot and a full-stack admin portal using Angular with C#/Python backend services.">Copy answer</button>
+          </div>
+          <div class="answer">Around <strong>3.5 years of hands-on full-stack development experience</strong>, with around <strong>4 years of overall professional software development experience</strong>.<br><br>
+     For example, at Fusionex I developed a full-stack AI chatbot and a full-stack admin portal using Angular with C#/Python backend services.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>4. Which do you think you are better at or enjoy more: frontend development or backend development?</h3>
+            <button class="copy-btn" data-copy="My stronger area is currently frontend development, especially JavaScript/TypeScript, React and interactive web applications.
+
+
+     However, I enjoy full-stack development because I like being able to connect the frontend, backend APIs and database together and understand the complete application flow.">Copy answer</button>
+          </div>
+          <div class="answer">My stronger area is currently <strong>frontend development</strong>, especially JavaScript/TypeScript, React and interactive web applications.<br><br>
+     However, I enjoy full-stack development because I like being able to connect the frontend, backend APIs and database together and understand the complete application flow.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>5. How many projects were you involved in at your previous workplace?</h3>
+            <button class="copy-btn" data-copy="Across my current and previous roles, I have been involved in around 8+ significant projects, including web applications, property sales platforms, AI chatbot systems, admin portals, Unity/Unreal applications, XR applications and Web3-related projects.">Copy answer</button>
+          </div>
+          <div class="answer">Across my current and previous roles, I have been involved in <strong>around 8+ significant projects</strong>, including web applications, property sales platforms, AI chatbot systems, admin portals, Unity/Unreal applications, XR applications and Web3-related projects.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>6. How many projects have you charge in from scratch?</h3>
+            <button class="copy-btn" data-copy="I have handled around 3–4 projects from the early development stage, including system setup, frontend/backend implementation, API/database integration, deployment and production support.">Copy answer</button>
+          </div>
+          <div class="answer">I have handled <strong>around 3–4 projects from the early development stage</strong>, including system setup, frontend/backend implementation, API/database integration, deployment and production support.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>7. Which kind of frontend language/framework that you apply/learn on previous workplace? (prefer HTML, CSS, JavaScript, VueJs)</h3>
+            <button class="copy-btn" data-copy="I have experience with HTML, CSS, JavaScript, TypeScript, React, Vite, Angular, Next.js, Bootstrap, PixiJS and Babylon.js.
+
+
+     My production experience is mainly with React and Angular rather than Vue.js.">Copy answer</button>
+          </div>
+          <div class="answer">I have experience with <strong>HTML, CSS, JavaScript, TypeScript, React, Vite, Angular, Next.js, Bootstrap, PixiJS and Babylon.js</strong>.<br><br>
+     My production experience is mainly with <strong>React and Angular</strong> rather than Vue.js.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>8. How many projects have you built using VueJs? Simply describe the project details</h3>
+            <button class="copy-btn" data-copy="I do not have a major production project built primarily with Vue.js yet.
+
+
+     Most of my frontend production experience has been with React, TypeScript and Angular. Since the core concepts such as components, state management, API integration and frontend architecture are transferable, I am confident that I can pick up Vue.js quickly.">Copy answer</button>
+          </div>
+          <div class="answer">I do not have a major production project built primarily with Vue.js yet.<br><br>
+     Most of my frontend production experience has been with <strong>React, TypeScript and Angular</strong>. Since the core concepts such as components, state management, API integration and frontend architecture are transferable, I am confident that I can pick up Vue.js quickly.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>9. Which kind of backend language/tool you apply/learn on previous workplace? (prefer PHP, Laravel)</h3>
+            <button class="copy-btn" data-copy="I have experience with PHP, Node.js / NestJS, C# / ASP.NET Web API, Python, RESTful APIs, MySQL, PostgreSQL, Laravel and third-party API integration.
+
+
+     My current role involves PHP/MySQL backend development, database handling and API-related development.">Copy answer</button>
+          </div>
+          <div class="answer">I have experience with <strong>PHP, Node.js / NestJS, C# / ASP.NET Web API, Python, RESTful APIs, MySQL, PostgreSQL, Laravel and third-party API integration</strong>.<br><br>
+     My current role involves PHP/MySQL backend development, database handling and API-related development.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>10. How many projects have you built using Laravel? Simply describe the project details</h3>
+            <button class="copy-btn" data-copy="I have learned and worked with Laravel, but Laravel has not been the primary framework for my major production projects.
+
+
+     Most of my production PHP backend work has involved PHP, MySQL, REST APIs and backend integration. I am familiar with Laravel concepts and am comfortable picking it up further if it is required for the role.">Copy answer</button>
+          </div>
+          <div class="answer">I have learned and worked with Laravel, but Laravel has <strong>not been the primary framework for my major production projects</strong>.<br><br>
+     Most of my production PHP backend work has involved PHP, MySQL, REST APIs and backend integration. I am familiar with Laravel concepts and am comfortable picking it up further if it is required for the role.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>11. Do you familiar with database system such as MySQL & if yes how many years?</h3>
+            <button class="copy-btn" data-copy="Yes. I have around 2+ years of hands-on MySQL experience, including database design/handling, queries and integrating MySQL with backend APIs and web applications.">Copy answer</button>
+          </div>
+          <div class="answer">Yes. I have around <strong>2+ years of hands-on MySQL experience</strong>, including database design/handling, queries and integrating MySQL with backend APIs and web applications.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>12. Do you have any experience with cloud platform such as AWS (Amazon Web Services)?</h3>
+            <button class="copy-btn" data-copy="I do not have deep production experience with AWS yet.
+
+
+     However, I have hands-on experience with application deployment and hosting, VPS/server management, Docker, Cloudflare, Vercel and CI/CD workflows, so I am familiar with many of the concepts involved in deploying and maintaining web applications.">Copy answer</button>
+          </div>
+          <div class="answer">I have some hands-on experience with <strong>Microsoft Azure</strong>, mainly through development and deployment-related work.<br><br>
+     My cloud experience is still developing, but I am familiar with cloud-based application workflows and am comfortable learning AWS if required for the role.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>13. How many junior or senior developers you have guided before?</h3>
+            <button class="copy-btn" data-copy="I have not kept an exact count, but I have guided and coordinated more than 5 team members across different projects.
+
+     Besides developers, I also coordinate with 3D team members. Although I am not a 3D modeller or rendering artist, I usually define the technical and project requirements, manage and follow up on tasks, review whether the output meets the application needs, and provide solutions when there are implementation issues.">Copy answer</button>
+          </div>
+          <div class="answer">I have not kept an exact count, but I have guided and coordinated <strong>more than 5 team members</strong> across different projects.<br><br>
+     Besides developers, I also coordinate with 3D team members. Although I am not a 3D modeller or rendering artist, I usually define the technical and project requirements, manage and follow up on tasks, review whether the output meets the application needs, and provide solutions when there are implementation issues.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>14. What is the biggest challenge to guide those junior or senior developer?</h3>
+            <button class="copy-btn" data-copy="One of the main challenges is making sure everyone understands not only what needs to be done, but also why a particular approach is being used.
+
+
+     I normally try to explain the requirement and technical reasoning clearly, provide suggestions rather than simply giving the answer, and balance learning opportunities with project deadlines.">Copy answer</button>
+          </div>
+          <div class="answer">One of the main challenges is making sure everyone understands not only what needs to be done, but also why a particular approach is being used.<br><br>
+     I normally try to explain the requirement and technical reasoning clearly, provide suggestions rather than simply giving the answer, and balance learning opportunities with project deadlines.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>15. Do you have experience on leading team? If yes please elaborate what kind of position under your subordination and how long?</h3>
+            <button class="copy-btn" data-copy="I have not held a formal Team Lead title yet.
+
+
+     However, I have taken ownership of projects and modules, coordinated with developers, designers and clients, and handled development from implementation through deployment and production support.">Copy answer</button>
+          </div>
+          <div class="answer">I have not held a formal <strong>Team Lead</strong> title yet.<br><br>
+     However, I have taken ownership of projects and modules, coordinated with developers, designers and clients, and handled development from implementation through deployment and production support.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>16. How do you handle disagreement or conflicting opinions within development team? Can give an example of how do you resolve the situation in the past?</h3>
+            <button class="copy-btn" data-copy="I normally first try to understand why each person prefers a particular solution instead of immediately deciding which person is right or wrong.
+
+
+     For example, when there are different opinions about how to implement a web or interactive feature, I compare the approaches based on requirements, development time, maintainability, performance and user experience. If necessary, I will create a small proof of concept or test the different approaches.
+
+
+     Then we can make the decision based on technical evidence and project requirements rather than personal preference.">Copy answer</button>
+          </div>
+          <div class="answer">I normally first try to understand why each person prefers a particular solution instead of immediately deciding which person is right or wrong.<br><br>
+     For example, when there are different opinions about how to implement a web or interactive feature, I compare the approaches based on requirements, development time, maintainability, performance and user experience. If necessary, I will create a small proof of concept or test the different approaches.<br><br>
+     Then we can make the decision based on technical evidence and project requirements rather than personal preference.</div>
+        </article>
+        
+
+        <article class="qa-card">
+          <div class="qa-head">
+            <h3>17. What steps do you take to stay updated with the latest trends and technologies in full stack development?</h3>
+            <button class="copy-btn" data-copy="I regularly read official documentation, GitHub repositories, release notes and technical discussions.
+
+
+     I also like to build small proof-of-concept projects when learning new technologies because I find hands-on testing more effective than only reading documentation.
+
+
+     Recently I have also been using AI development tools to help with technical research, compare different approaches and learn new frameworks more efficiently.">Copy answer</button>
+          </div>
+          <div class="answer">I regularly read official documentation, GitHub repositories, release notes and technical discussions.<br><br>
+     I also like to build small proof-of-concept projects when learning new technologies because I find hands-on testing more effective than only reading documentation.<br><br>
+     Recently I have also been using AI development tools to help with technical research, compare different approaches and learn new frameworks more efficiently.</div>
+        </article>
+</section>
+<footer>
+    Prepared as a single-file interview reference page.
+  </footer>
+</div>
+
+<script>
+function fallbackCopy(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  document.execCommand('copy');
+  document.body.removeChild(ta);
+}
+
+async function copyText(text, btn) {
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      fallbackCopy(text);
+    }
+    const old = btn.textContent;
+    btn.textContent = 'Copied';
+    setTimeout(() => btn.textContent = old, 1200);
+  } catch (e) {
+    fallbackCopy(text);
+  }
+}
+
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', () => copyText(btn.dataset.copy, btn));
+});
+
+async function copyAll() {
+  const sections = [...document.querySelectorAll('.qa-card')];
+  const text = sections.map(card => {
+    const q = card.querySelector('h3').innerText.trim();
+    const a = card.querySelector('.answer').innerText.trim();
+    return q + "\n" + a;
+  }).join("\n\n");
+  const btn = event.currentTarget;
+  await copyText(text, btn);
+}
+</script>
+</body>
+</html>

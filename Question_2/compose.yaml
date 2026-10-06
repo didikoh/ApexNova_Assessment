@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      APP_ENV: local
+      APP_DEBUG: "false"
+      DB_CONNECTION: sqlite
+      DB_DATABASE: /var/lib/inventory/database.sqlite
+    volumes:
+      - inventory-data:/var/lib/inventory
+
+volumes:
+  inventory-data:
