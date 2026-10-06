@@ -10,6 +10,6 @@ The controller is easy to follow, but there are a few things I'd want to check a
 
 4. Listing: Order::all() could get expensive as the table grows. I'd limit the query to orders the user can access, add a consistent sort order, and paginate the results with a maximum page size. Eager-loading the user relationship would also avoid a separate query for every order. We should handle orders whose user has been deleted or is missing as well.
 
-5. Audit logging: The DB::select() call only reads data, and its result isn't used.
+5. Audit logging: The DB::select() call only reads data, and its result isn't used. If audit logging is intended to happen when an order is created, the order creation and audit write should be wrapped in a transaction.
 
 6. Responses: I'd use an OrderResource so we control which fields are returned and keep the response format consistent. Creating an order should return 201. For deletion, either 200 with a message or 204 with no response body would work.

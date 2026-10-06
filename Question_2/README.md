@@ -143,17 +143,9 @@ The API binds to `127.0.0.1:8000`. Startup creates the local environment and app
 
 Docker build and runtime verification passed on 2026-10-06 using Docker Desktop 4.65.0 (Linux engine). Because host port 8000 was occupied, verification used a temporary Compose override mapping `127.0.0.1:8001` to container port 8000; the default configuration remains unchanged. Checks passed for health (`200`), unauthenticated product access (`401`), login, authenticated product/category/supplier lists (3/2/2 seeded records), and logout (`204`). Database migrations also remained intact after container recreation. The startup command uses `--no-reload` so Laravel's development server preserves Docker environment variables, including the SQLite database path.
 
-## Laravel 11 security note
+## Security note
 
-The assessment explicitly requires Laravel 11.x. Composer currently reports four advisory records affecting the installed framework. Project-local `config.audit.ignore` entries use `apply: block` solely to allow that required version to resolve; **audit reporting remains enabled**. `composer audit` is expected to return a non-zero status. No global Composer settings were changed.
-
-| Advisory | Issue |
-| --- | --- |
-| `PKSA-d5tc-s1qs-h781` | [Debug page XSS](https://github.com/advisories/GHSA-jh5r-qr3c-85q8) |
-| `PKSA-m5cs-t1y6-qpcs` | [Temporary signed URL path confusion](https://github.com/advisories/GHSA-crmm-hgp2-wgrp) |
-| `PKSA-3r5d-mb8f-1qw9`, `PKSA-mdq4-51ck-6kdq` | [Email validation CRLF injection](https://github.com/laravel/framework/security/advisories/GHSA-5vg9-5847-vvmq) |
-
-Debug mode defaults to false, login uses strict email validation with an explicit CR/LF check, and the API does not use signed URLs. These measures do not constitute a framework patch. Upgrade to a supported, patched Laravel release and remove the exceptions before any production deployment.
+This project uses Laravel 11 as required by the assessment. The recorded `composer audit` check reported known framework security issues. Local Composer exceptions allow installation, but audit checks still report these issues. Upgrade Laravel and remove the exceptions before using this project in production.
 
 Implementation references: [Laravel 11 Sanctum](https://laravel.com/docs/11.x/sanctum), [API Resources](https://laravel.com/docs/11.x/eloquent-resources), [validation](https://laravel.com/docs/11.x/validation), and [Composer audit configuration](https://getcomposer.org/doc/06-config.md#audit).
 
